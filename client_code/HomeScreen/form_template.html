@@ -1,0 +1,20 @@
+<anvil-form container="HtmlTemplate" prop:html="@theme:standard-page.html" prop:visible="true" prop:foreground="" prop:background="theme:Gray 800">
+  <anvil-component type="ColumnPanel" name="content_panel" prop:spacing='{"padding":[null,"0",null,0],"margin":[null,null,null,0]}' container:slot="default">
+    <anvil-component type="ColumnPanel" name="card_1" prop:role="" prop:wrap_on="mobile" prop:spacing='{"padding":[0,"0",0,0],"margin":["4",null,"4",null]}' prop:col_spacing="medium" prop:background="theme:White" container:grid_position="PSIPJO,UBUOUD" container:full_width_row="false" container:row_background="">
+      <anvil-component type="Label" name="label_1" prop:text="Your Journal" prop:align="left" prop:spacing='{"padding":[null,"0",null,"0"],"margin":["0","8","0",8]}' prop:bold="true" prop:font_size="null" prop:role="headline" prop:font="Inter" container:grid_position="YNORJF,UCSEYI"></anvil-component>
+    </anvil-component>
+    <anvil-component type="ColumnPanel" name="card_2" prop:role="card" prop:background="theme:Primary 500" container:grid_position="HWVIMF,JXGVFO">
+      <anvil-component type="ColumnPanel" name="profile_card" prop:role="card" prop:spacing='{"padding":["2",6,"2",0],"margin":["2","550","4","0"]}' prop:col_widths='"{\"OJBBXA\":10,\"OXTAXM\":50}"' container:grid_position="ZTDOTJ,PAIBQH">
+        <anvil-component type="Label" name="profile" prop:role="text" prop:bold="false" prop:align="center" prop:icon="fa:address-book" prop:underline="false" prop:icon_align="right" prop:visible="true" prop:font_size="25" prop:spacing='{"padding":[0,"0",0,0],"margin":[6,"0",0,10]}' prop:text="" container:grid_position="AJOYUC,OJBBXA"></anvil-component>
+        <anvil-component type="TextBox" name="name_box" prop:placeholder="username" prop:margin="[1,0,0,0]" prop:align="left" prop:font_size="null" container:grid_position="AJOYUC,OXTAXM"></anvil-component>
+      </anvil-component>
+      <anvil-component type="ColumnPanel" name="card_3" prop:role="card" prop:col_widths='"{\"RZCXSU\":2,\"YYYBOM\":40}"' prop:spacing='{"padding":["2",8,"2","4"],"margin":["2",null,"2",null]}' container:grid_position="SJFWDH,JCKUVF">
+        <anvil-component type="Label" name="text_2" prop:role="text" prop:text="" prop:icon="fa:pencil" prop:align="center" prop:spacing='{"padding":["0",0,11,"0"],"margin":["4","0","4","3"]}' prop:font_size="25" container:grid_position="LAZNNH,RZCXSU"></anvil-component>
+        <anvil-component type="TextArea" name="text_area_1" prop:margin="[null,0,null,0]" prop:height="34.42578125" prop:enabled="true" prop:auto_expand="true" prop:placeholder="what's on your mind..." container:grid_position="LAZNNH,YYYBOM" container:full_width_row="false"></anvil-component>
+      </anvil-component>
+    </anvil-component>
+    <anvil-component type="Button" name="post_button" prop:text="Post" prop:role="primary-color" prop:align="left" container:grid_position="FBCVUX,SFEPAA"></anvil-component>
+  </anvil-component>
+  <anvil-component type="FlowPanel" name="navbar_links" container:slot="nav-right"></anvil-component>
+  <anvil-component type="Label" name="headline_1" prop:role="headline" prop:font="Inter" prop:font_size="50" prop:text=" LiveJournal" prop:bold="true" prop:background="" prop:icon="fa:book" prop:icon_align="left" container:slot="top-left-btn"></anvil-component>
+</anvil-form>

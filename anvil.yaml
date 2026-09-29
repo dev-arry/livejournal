@@ -1,4 +1,5 @@
 allow_embedding: false
+metadata: {description: A simple hobby site made for students to just talk openly, title: LiveJournal}
 name: LiveJournal
 package_name: LiveJournal
 runtime_options:
@@ -10,4 +11,5 @@ services:
 - client_config: {enable_v2: true}
   server_config: {}
   source: /runtime/services/tables.yml
-startup_form: Form1
+startup: {module: HomeScreen, type: form}
+startup_form: null
