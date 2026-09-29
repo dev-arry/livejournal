@@ -1,0 +1,16 @@
+<anvil-form container="HtmlTemplate" prop:html="@theme:standard-page.html" prop:visible="true" prop:foreground="" prop:background="theme:Black">
+  <anvil-component type="ColumnPanel" name="content_panel" prop:spacing='{"padding":[null,"0",null,0],"margin":[null,null,null,0]}' container:slot="default">
+    <anvil-component type="ColumnPanel" name="card_1" prop:role="" prop:wrap_on="mobile" prop:spacing='{"padding":[0,"0",0,0],"margin":[0,null,"0",null]}' prop:col_spacing="medium" prop:background="theme:White" container:grid_position="PSIPJO,UBUOUD" container:full_width_row="false" container:row_background="">
+      <anvil-component type="Label" name="label_1" prop:text="Your Journal" prop:spacing='{"padding":[null,"0",null,"0"],"margin":["0","8","0",8]}' prop:bold="true" prop:font_size="null" prop:role="headline" prop:font="Inter" container:grid_position="YNORJF,UCSEYI"></anvil-component>
+    </anvil-component>
+    <anvil-component type="Spacer" name="spacer_1" prop:height="18.8203125" container:grid_position="EIBZHR,HPRSIX"></anvil-component>
+    <anvil-component type="ColumnPanel" name="card_2" prop:role="card" container:grid_position="NLRMZY,TIQMNK">
+      <anvil-component type="Label" name="text_1" prop:role="text" prop:text="Name:" container:grid_position="AJOYUC,OJBBXA"></anvil-component>
+    </anvil-component>
+    <anvil-component type="ColumnPanel" name="card_3" prop:role="card" container:grid_position="NZZRRV,FNPQWV">
+      <anvil-component type="Label" name="text_2" prop:role="text" prop:text="Text:" container:grid_position="LAZNNH,RZCXSU"></anvil-component>
+    </anvil-component>
+  </anvil-component>
+  <anvil-component type="FlowPanel" name="navbar_links" container:slot="nav-right"></anvil-component>
+  <anvil-component type="Label" name="headline_1" prop:role="headline" prop:font="Inter" prop:font_size="50" prop:text="LiveJournal" prop:bold="true" prop:background="" container:slot="top-left-btn"></anvil-component>
+</anvil-form>

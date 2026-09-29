@@ -148,8 +148,10 @@ color_scheme:
       name: Grey
 roles:
 - components: [Label, Link]
+  display_in_toolbox: true
   name: text
 - components: [Label]
+  display_in_toolbox: true
   name: subheading
 - components: [Label]
   name: input-prompt
@@ -166,6 +168,7 @@ roles:
   name: card
   title: Card
 - components: [Button, FileLoader]
+  display_in_toolbox: true
   name: raised
 - components: [Button, FileLoader]
   display_in_toolbox: true
