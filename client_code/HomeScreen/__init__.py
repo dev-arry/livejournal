@@ -11,7 +11,9 @@ class HomeScreen(HomeScreenTemplate):
     super().__init__(**properties)
 
     # Load existing posts
-    self.repeating_panel_1.items = app_tables.journal_post.search()
+    self.repeating_panel_1.items = app_tables.journal_post.search(
+      tables.order_by("created", ascending=False)
+    )
 
   @handle("post_button", "click")
   def post_button_click(self, **event_args):
@@ -30,7 +32,9 @@ class HomeScreen(HomeScreenTemplate):
     anvil.server.call('journal_post', username, post)
 
     # THEN refresh the repeating panel
-    self.repeating_panel_1.items = app_tables.journal_post.search()
+    self.repeating_panel_1.items = app_tables.journal_post.search(
+      tables.order_by("created", ascending=False)
+    )
 
     Notification(
       "Post successful",

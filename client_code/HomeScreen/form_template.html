@@ -3,15 +3,15 @@
   <anvil-component type="Button" name="headline_2" prop:role="null" prop:bold="true" prop:align="left" prop:background="theme:Primary 500" prop:icon="" prop:font="Inter" prop:icon_align="left" prop:foreground="theme:White" prop:visible="true" prop:border="" prop:enabled="true" prop:font_size="10" prop:spacing='{"margin":["4","500","0",37],"padding":[0,"16","0","16"]}' prop:text="[about]" container:slot="top-left-btn"></anvil-component>
   <anvil-component type="ColumnPanel" name="content_panel" prop:spacing='{"padding":[null,"0","16",0],"margin":[null,"0","4","0"]}' prop:col_widths='"{\"WAAZJE\":90}"' prop:visible="true" prop:role="null" prop:background="" prop:col_spacing="none" container:slot="default">
     <anvil-component type="FlowPanel" name="flow_panel" prop:spacing='{"padding":[null,null,"0",0],"margin":[null,"0",null,0]}' prop:gap="none" container:grid_position="MLBIVV,WAAZJE" container:full_width_row="true">
-      <anvil-component type="ColumnPanel" name="card_1" prop:role="" prop:wrap_on="mobile" prop:spacing='{"padding":[0,0,"0",0],"margin":["4",0,"4",null]}' prop:col_spacing="medium" prop:background="theme:White" container:width="974.5240033660084">
+      <anvil-component type="ColumnPanel" name="card_1" prop:role="" prop:wrap_on="mobile" prop:spacing='{"padding":[0,0,"0",0],"margin":["4",0,"4","5"]}' prop:col_spacing="medium" prop:background="theme:White" container:width="974.5240033660084">
         <anvil-component type="Label" name="label_1" prop:text="Your Journal" prop:align="left" prop:spacing='{"padding":[null,"0",null,"0"],"margin":["0","8","0",8]}' prop:bold="true" prop:font_size="null" prop:role="headline" prop:font="Inter" container:grid_position="XMSEZB,JTTQUQ"></anvil-component>
       </anvil-component>
-      <anvil-component type="Spacer" name="spacer_1" prop:height="47.21875" container:width="163.65625"></anvil-component>
+      <anvil-component type="Spacer" name="spacer_1" prop:height="47.21875" container:width="259.69921875"></anvil-component>
       <anvil-component type="ColumnPanel" name="card_4" prop:role="card">
         <anvil-component type="Label" name="label_2" prop:align="center" prop:text="Info" prop:background="theme:Primary 700" prop:foreground="theme:White" prop:role="subheading" prop:spacing='{"margin":[null,"",null,0],"padding":[null,104,null,88]}' container:grid_position="ODUWRO,TOJFFW"></anvil-component>
         <anvil-component type="Label" name="text_1" prop:role="text" prop:text="write something" prop:spacing='{"margin":[null,null,"4",null]}' container:grid_position="LINZOX,UVKGBD"></anvil-component>
       </anvil-component>
-      <anvil-component type="ColumnPanel" name="card_2" prop:role="card" prop:background="theme:Primary 500" prop:visible="true" prop:spacing='{"padding":["8","12","8","12"],"margin":["4",0,"4",0]}' container:width="975.2265625">
+      <anvil-component type="ColumnPanel" name="card_2" prop:role="card" prop:background="theme:Primary 500" prop:visible="true" prop:spacing='{"padding":["8","12","8","12"],"margin":["4",0,"4","5"]}' container:width="975.2265625">
         <anvil-component type="ColumnPanel" name="profile_card" prop:role="card" prop:spacing='{"padding":["2",6,"2",0],"margin":["2","550","4","0"]}' prop:col_widths='"{\"OJBBXA\":10,\"OXTAXM\":50}"' container:grid_position="ZTDOTJ,PAIBQH">
           <anvil-component type="Label" name="profile" prop:role="text" prop:bold="false" prop:align="center" prop:icon="fa:address-book" prop:underline="false" prop:icon_align="right" prop:visible="true" prop:font_size="25" prop:spacing='{"padding":[0,"0",0,0],"margin":[6,"0",0,10]}' prop:text="" container:grid_position="AJOYUC,OJBBXA"></anvil-component>
           <anvil-component type="TextBox" name="username_text" prop:placeholder="username" prop:margin="[1,0,0,0]" prop:align="left" prop:font_size="null" container:grid_position="AJOYUC,OXTAXM"></anvil-component>
@@ -23,6 +23,6 @@
         <anvil-component type="Button" name="post_button" prop:text="Post" prop:role="primary-color" prop:align="left" prop:background="#96d35f" prop:foreground="theme:White" container:grid_position="EWHQOG,AHABMR"></anvil-component>
       </anvil-component>
     </anvil-component>
-    <anvil-component type="RepeatingPanel" name="repeating_panel_1" prop:item_template="LiveJournal.JournalPosts" prop:visible="true" container:grid_position="NPAPVT,AODNTI"></anvil-component>
+    <anvil-component type="RepeatingPanel" name="repeating_panel_1" prop:item_template="LiveJournal.JournalPosts" prop:visible="true" container:grid_position="NPAPVT,AODNTI" container:full_width_row="true"></anvil-component>
   </anvil-component>
 </anvil-form>
