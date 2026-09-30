@@ -11,3 +11,8 @@ class AboutScreen(AboutScreenTemplate):
     super().__init__(**properties)
 
     # Any code you write here will run before the form opens.
+
+  @handle("join_button", "click")
+  def join_button_click(self, **event_args):
+    open_form('HomeScreen')
+    """This method is called when the button is clicked"""

@@ -741,6 +741,7 @@ CHECKBOX / RADIO
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
+  margin-bottom: 10px;
   background: whitesmoke;
   border-radius: 10px;
   border: 0px solid black;
@@ -766,3 +767,34 @@ CHECKBOX / RADIO
   font-size: 17px;
   line-height: 1.5;
 }
+
+.bottom-bar span{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+
+  background: #2196F3;
+  border-top: 1px solid #ddd;
+
+  transform: translateY(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.bottom-text {
+  color: white;
+  font-size: 10px;
+}
+
+.top-text {
+  color:white;
+  font-size: 50px;
+  font-family: Inter;
+  
+}
+

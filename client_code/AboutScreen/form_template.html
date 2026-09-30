@@ -1,7 +1,46 @@
-<anvil-form container="ColumnPanel">
-  <anvil-component type="Label" name="label_1" prop:role="headline" prop:text="LiveJournal" prop:spacing='{"padding":[null,null,null,"0"]}' container:grid_position="JDFQTH,XRERND" container:full_width_row="true"></anvil-component>
-  <anvil-component type="FlowPanel" name="flow_panel_1" prop:spacing='{"margin":[null,null,null,0],"padding":[null,null,null,"0"]}' container:grid_position="JZKUHS,LTSQLM" container:full_width_row="true">
-    <anvil-component type="ColumnPanel" name="card_1" prop:role="card" container:width="1193.421875"></anvil-component>
-    <anvil-component type="ColumnPanel" name="card_2" prop:role="card" container:width="223.61328125"></anvil-component>
-  </anvil-component>
-</anvil-form>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" as="font" crossorigin="anonymous" />
+<div class="aboutscreen">
+  <div class="structure">
+    <!-- Top navigation bar -->
+    <div anvil-drop-container=".anvil-container" anvil-drop-redirect=".placeholder" class="app-bar">
+      <anvil-component type="Label" name="headline_1" prop:role="headline" prop:bold="true" prop:background="" prop:icon="fa:book" prop:font="Inter" prop:icon_align="left" prop:visible="true" prop:font_size="50" prop:spacing='{"margin":["5",null,"0",null],"padding":["8",null,"0",null]}' prop:text=" LiveJournal" container:slot="top-left-btn"></anvil-component>
+
+      <div anvil-slot="nav-right" class="app-bar-nav">
+        <div anvil-if-slot-empty="nav-right" anvil-drop-here class="placeholder anvil-designer-only">
+        </div>
+      </div>
+
+      <div style="clear:both"></div>
+    </div>
+    <anvil-component type="Label" name="label_1" prop:align="center" prop:text="[ABOUT]" prop:bold="true" prop:font="Roboto" prop:font_size="20" prop:role="null"></anvil-component>
+    <anvil-component type="Label" name="label_2" prop:text="[The Project]" prop:spacing='{"padding":["4","4","4","4"],"margin":[null,"10",null,"10"]}' prop:role="text" prop:background="theme:Primary 700" prop:foreground="theme:Black" prop:bold="true"></anvil-component>
+    <div class="project-text">LiveJournal is a way for people to share their </div>
+    <anvil-component type="Label" name="label_10" prop:text="[The People]" prop:spacing='{"padding":["4","4","4","4"],"margin":[null,"10",null,"10"]}' prop:role="text" prop:background="theme:Primary 700" prop:foreground="theme:Black" prop:bold="true"></anvil-component>
+
+    <div class="people-text">
+      <div class="people-top">
+        <span class="arry">Arghaya Singh</span>
+        <span class="arry-works">Programmer and Designer</span>
+      </div>
+      <div>
+        <span class="lirit">Lirit Ron</span>
+        <span class="lirit-work">Paid for the servers</span>
+      </div>
+    </div>
+    <anvil-component type="Button" name="button_1" prop:text="join" prop:background="" prop:foreground="" prop:role="primary-color" prop:align="center"></anvil-component>
+
+    <!-- Main page content -->
+    <div class="content">
+      <div anvil-slot-repeat="default" class="anvil-measure-this"></div>
+    </div>
+
+  </div>
+
+  <!-- Anvil's drag/drop support -->
+  <div anvil-drop-default anvil-drop-redirect=".placeholder" anvil-drop-container=".anvil-container">
+  </div>
+
+  <div class="bottom-bar">
+    <span class="bottom-text">© 2026 LiveJournal</span>
+  </div>
+</div>
