@@ -161,6 +161,7 @@ roles:
   name: headline
   title: Headline
 - components: [Label]
+  display_in_toolbox: true
   name: display-4
 - components: [ColumnPanel, LinearPanel, XYPanel, RepeatingPanel]
   displayInToolbox: true
