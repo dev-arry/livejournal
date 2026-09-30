@@ -1,4 +1,23 @@
 allow_embedding: false
+db_schema:
+  journal_post:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      client_hidden: false
+      name: username
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      client_hidden: false
+      name: post
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      client_hidden: false
+      name: created
+      type: datetime
+    indexes: []
+    server: full
+    title: journal_post
 metadata: {description: A simple hobby site made for students to just talk openly, title: LiveJournal}
 name: LiveJournal
 package_name: LiveJournal

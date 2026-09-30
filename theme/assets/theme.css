@@ -501,7 +501,7 @@ a:hover, a:active {
 
 /* Notifications */
 body>div[data-notify="container"] {
-  background: white;
+  background: black;
   border: none;
   padding: 24px;
 }
