@@ -11,19 +11,27 @@
           <anvil-component type="Label" name="profile" prop:role="text" prop:bold="false" prop:align="center" prop:icon="fa:address-book" prop:underline="false" prop:icon_align="right" prop:visible="true" prop:font_size="25" prop:spacing='{"padding":[0,"0",0,0],"margin":[6,"0",0,10]}' prop:text="" container:grid_position="AJOYUC,OJBBXA"></anvil-component>
           <anvil-component type="TextBox" name="username_text" prop:placeholder="username" prop:margin="[1,0,0,0]" prop:align="left" prop:font_size="null" container:grid_position="AJOYUC,OXTAXM"></anvil-component>
         </anvil-component>
-        <anvil-component type="ColumnPanel" name="card_3" prop:role="card" prop:col_widths='"{\"RZCXSU\":2,\"YYYBOM\":40}"' prop:spacing='{"padding":["2",8,"2",0],"margin":["2",null,"2",0]}' container:grid_position="SJFWDH,JCKUVF">
-          <anvil-component type="Label" name="text_2" prop:role="text" prop:text="" prop:icon="fa:pencil" prop:align="center" prop:spacing='{"padding":["0",0,11,"0"],"margin":["4","0","4","3"]}' prop:font_size="25" container:grid_position="LAZNNH,RZCXSU"></anvil-component>
-          <anvil-component type="TextArea" name="post_text" prop:margin='[null,0,"4",0]' prop:height="71.78125" prop:enabled="true" prop:auto_expand="true" prop:placeholder="what's on your mind..." container:grid_position="LAZNNH,YYYBOM" container:full_width_row="false"></anvil-component>
+        <anvil-component type="ColumnPanel" name="card_3" prop:role="card" prop:col_widths='"{\"RZCXSU\":2,\"YYYBOM\":40}"' prop:spacing='{"padding":["2","8","2",0],"margin":["2",null,"2",0]}' container:grid_position="SJFWDH,JCKUVF">
+          <anvil-component type="Label" name="text_2" prop:role="text" prop:text="" prop:icon="fa:pencil" prop:align="center" prop:spacing='{"padding":["0",0,11,"0"],"margin":["4","0","4",14]}' prop:font_size="25" container:grid_position="LAZNNH,RZCXSU"></anvil-component>
+          <anvil-component type="TextArea" name="post_text" prop:margin='[null,0,"4",0]' prop:height="37.921875" prop:enabled="true" prop:auto_expand="true" prop:placeholder="what's on your mind..." container:grid_position="LAZNNH,YYYBOM" container:full_width_row="false"></anvil-component>
         </anvil-component>
         <anvil-component type="Button" name="post_button" prop:text="Post" prop:role="primary-color" prop:align="left" prop:background="theme:Primary 700" prop:foreground="theme:White" container:grid_position="EWHQOG,AHABMR"></anvil-component>
       </anvil-component>
     </anvil-component>
     <anvil-component type="ColumnPanel" name="card_4" prop:role="card" prop:spacing='{"padding":[null,"12",null,null],"margin":[null,"5",null,"20"]}' container:grid_position="MLBIVV,BDKZKC">
       <anvil-component type="Label" name="label_2" prop:align="center" prop:text="Info" prop:background="theme:Primary 700" prop:foreground="theme:White" prop:role="subheading" prop:spacing='{"margin":[null,"",null,0],"padding":[null,104,null,88]}' container:grid_position="ODUWRO,TOJFFW"></anvil-component>
-      <anvil-component type="Label" name="text_1" prop:role="text" prop:text="Place for people to share their thoughts, and ideas anonymously.
-" prop:spacing='{"margin":[null,3,"4","3"],"padding":[null,0,null,null]}' prop:border="" prop:foreground="" prop:bold="false" prop:underline="false" prop:align="left" container:grid_position="LINZOX,UVKGBD"></anvil-component>
-      <anvil-component type="Label" name="text_3" prop:role="text" prop:text="username system being worked on" prop:spacing='{"padding":[null,null,null,null],"margin":[null,"3",null,"3"]}' container:grid_position="NOEULQ,GHGULW"></anvil-component>
+      <anvil-component type="Label" name="text_1" prop:role="text" prop:text="Get started:
+" prop:spacing='{"margin":[null,3,"4","3"],"padding":[null,0,null,null]}' prop:border="" prop:foreground="" prop:bold="true" prop:underline="false" prop:align="left" container:grid_position="LINZOX,UVKGBD"></anvil-component>
+      <anvil-component type="Label" name="text_3" prop:role="text" prop:text="1. Enter any username of your choice next to the user icon. LiveJournal is an anonymous application and doesn't save your data.
+" prop:spacing='{"padding":[null,null,null,null],"margin":[null,"3",null,"3"]}' prop:bold="false" container:grid_position="NOEULQ,GHGULW"></anvil-component>
+      <anvil-component type="Label" name="text_6" prop:role="text" prop:text="2. Write journal entry next to the pencil icon. " container:grid_position="NFNCNM,AFZFFQ"></anvil-component>
+      <anvil-component type="Label" name="text_7" prop:role="text" prop:text="3. When you are happy with what you have written press post and enjoy." container:grid_position="AZQHET,LEFZGI"></anvil-component>
+      <anvil-component type="Label" name="text_4" prop:role="text" prop:bold="true" prop:text="What's next?" container:grid_position="XSQZMR,DVWSAD"></anvil-component>
+      <anvil-component type="Label" name="text_5" prop:role="text" prop:text="1. Assignment of username without login to create a safe space and to also reduce spam.
+" container:grid_position="FLIAUH,OQXHOV"></anvil-component>
+      <anvil-component type="Label" name="text_8" prop:role="text" prop:text="2. Ability to like and reply to a specific post" container:grid_position="OCHXQU,IPPRGD"></anvil-component>
     </anvil-component>
+    <anvil-component type="Spacer" name="spacer_1" prop:height='"20"' container:grid_position="RCSWRB,CTPTYZ"></anvil-component>
     <anvil-component type="RepeatingPanel" name="repeating_panel_1" prop:item_template="LiveJournal.JournalPosts" prop:visible="true" prop:margin='[null,"5",null,"5"]' container:grid_position="NPAPVT,AODNTI" container:full_width_row="true"></anvil-component>
   </anvil-component>
 </anvil-form>
