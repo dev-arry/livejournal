@@ -18,7 +18,7 @@ db_schema:
     indexes: []
     server: full
     title: journal_post
-metadata: {description: A simple hobby site made for students to just talk openly, title: LiveJournal}
+metadata: {description: A simple hobby site made for students to just talk openly, logo_img: 'asset:images.png', title: LiveJournal}
 name: LiveJournal
 package_name: LiveJournal
 runtime_options:
