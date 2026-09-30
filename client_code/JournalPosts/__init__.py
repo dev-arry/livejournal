@@ -11,8 +11,6 @@ class JournalPosts(JournalPostsTemplate):
     super().__init__(**properties)
 
   def form_show(self, **event_args):
-    print(self.item)
-
-    self.username.text = str(self.item['username'])
-    self.post.text = str(self.item['post'])
-    self.created.text = str(self.item['created'])
+    self.dom_nodes["username"].textContent = str(self.item["username"])
+    self.dom_nodes["post"].textContent = str(self.item["post"])
+    self.dom_nodes["created"].textContent = self.item["created"].strftime("%d %B %Y, %H:%M")
