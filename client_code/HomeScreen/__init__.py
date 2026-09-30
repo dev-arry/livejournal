@@ -31,4 +31,11 @@ class HomeScreen(HomeScreenTemplate):
     self.username_text.text = ""
     self.post_text.text = ""
 
+  @handle("headline_2", "click")
+  def headline_2_click(self, **event_args):
+    open_form('AboutScreen')
+    """This method is called when the button is clicked"""
+    
+    
+
     
