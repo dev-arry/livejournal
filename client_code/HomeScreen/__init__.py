@@ -8,10 +8,10 @@ from anvil.tables import app_tables
 
 class HomeScreen(HomeScreenTemplate):
   def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
     super().__init__(**properties)
 
-    # Any code you write here will run before the form opens.
+    # Load existing posts
+    self.repeating_panel_1.items = app_tables.journal_post.search()
 
   @handle("post_button", "click")
   def post_button_click(self, **event_args):
@@ -19,13 +19,26 @@ class HomeScreen(HomeScreenTemplate):
     post = self.post_text.text
 
     if username.strip() == "" or post.strip() == "":
-      Notification("Please enter username and a post", title="Alert!", timeout=2).show()
+      Notification(
+        "Please enter username and a post",
+        title="Alert!",
+        timeout=2
+      ).show()
       return
-    
+
+    # Add the new post FIRST
     anvil.server.call('journal_post', username, post)
-    Notification("Post successful", title="Notification", timeout=2).show()
+
+    # THEN refresh the repeating panel
+    self.repeating_panel_1.items = app_tables.journal_post.search()
+
+    Notification(
+      "Post successful",
+      title="Notification",
+      timeout=2
+    ).show()
+
     self.clear_input()
-    """This method is called when the button is clicked"""
 
   def clear_input(self):
     self.username_text.text = ""
@@ -34,8 +47,3 @@ class HomeScreen(HomeScreenTemplate):
   @handle("headline_2", "click")
   def headline_2_click(self, **event_args):
     open_form('AboutScreen')
-    """This method is called when the button is clicked"""
-    
-    
-
-    

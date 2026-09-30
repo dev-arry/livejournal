@@ -6,7 +6,6 @@
 /* =========================
 BASIC ANVIL LAYOUT
 ========================= */
-
 .anvil-panel-col {
   padding-bottom: 10px;
   margin-bottom: -10px;
@@ -735,4 +734,35 @@ CHECKBOX / RADIO
 .checkbox,
 .radio {
   font-size: 16px;
+}
+
+/* Journal Post CSS style*/
+.journal-post {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: blue;
+  border-radius: 10px;
+  border: 0px solid black;
+}
+
+.journal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.username {
+  color: black
+  font-weight: bold;
+}
+
+.date {
+  color: gray;
+  font-size: 14px;
+}
+
+.post {
+  font-size: 17px;
+  line-height: 1.5;
 }
