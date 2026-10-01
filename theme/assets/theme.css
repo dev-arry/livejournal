@@ -754,6 +754,7 @@ CHECKBOX / RADIO
 }
 
 .username {
+  font-size: 20px;
   color: black;
   font-weight: bold;
 }
@@ -778,7 +779,7 @@ CHECKBOX / RADIO
   background: #2196F3;
   border-top: 1px solid #ddd;
 
-  transform: translateY(10px);
+  /*transform: translateY(10px);*/
   display: flex;
   align-items: center;
   justify-content: center;
