@@ -1,1 +1,3 @@
 LiveJournal is a way for people to share their experience, thoughts and idea anonymously. Let all your thoughts out on a blank canvas in a matter of minutes. Talk about your day, what went wrong, confessions and anything that you can think of. LiveJournal doesn't save any data. Go crazy!
+
+It is the first website I have ever made, was very exhausting but I am very proud. I will try my best to keep it put to date.
