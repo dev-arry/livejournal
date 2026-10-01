@@ -15,6 +15,12 @@ class HomeScreen(HomeScreenTemplate):
       tables.order_by("created", ascending=False)
     )
 
+  @handle("timer_1", "tick")
+  def timer_1_tick(self, **event_args):
+    self.repeating_panel_1.items = app_tables.journal_post.search(
+      tables.order_by("created", ascending=False)
+    )
+
   @handle("post_button", "click")
   def post_button_click(self, **event_args):
     username = self.username_text.text
@@ -47,6 +53,9 @@ class HomeScreen(HomeScreenTemplate):
   def clear_input(self):
     self.username_text.text = ""
     self.post_text.text = ""
+
+  def reload_system(self):
+    open_form('HomeScreen')
 
   @handle("headline_2", "click")
   def headline_2_click(self, **event_args):
