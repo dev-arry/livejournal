@@ -822,42 +822,24 @@ CHECKBOX / RADIO
   box-sizing: border-box;
 }
 
-.people-top{
-  .arry{
-    color: blue;
-    font-size: 15px;
-    text-align: left;
-    padding: 0 0;
-    margin: 0 370px 0 350px;
-    background: white;
-    align-content: center;
-  }
-  .arry-works{
-    color: black;
-    font-size: 15px;
-    text-align: right;
-    padding: 0 0;
-    margin: 0 0 0 0;
-    background: white;
-  }
+.people-top,
+.people-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
 }
 
-.people-bottom {
-  .lirit{
-    color: blue;
-    font-size: 15px;
-    text-align: right;
-    padding: 0 0;
-    margin: 0 410px 0 350px;
-    background: white;
-  }
+.arry,
+.lirit {
+  color: blue;
+  font-size: 15px;
+  font-weight: bold;
+}
 
-  .lirit-work {
-    color: black;
-    font-size: 15px;
-    text-align: left;
-    padding: 0 0;
-    margin: 0 0 0 0;
-    background: white;
-  }
+.arry-works,
+.lirit-work {
+  color: black;
+  font-size: 15px;
 }
