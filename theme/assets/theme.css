@@ -843,3 +843,7 @@ CHECKBOX / RADIO
   color: black;
   font-size: 15px;
 }
+
+#loadingSpinner { 
+  display: none !important; 
+}
